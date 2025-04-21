@@ -23,7 +23,7 @@ jobs:
 
       - name: Run Tests
         run: |
-          cd Cubeit
+          cd cubeit
           python -m http.server 8000 &
           cd ..
           pytest -v -s
