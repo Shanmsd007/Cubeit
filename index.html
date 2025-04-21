@@ -1,0 +1,15 @@
+<input type="text" id="numberInput" placeholder="Enter a number">
+    <button onclick="calculateCube()">Calculate Cube</button>
+    <p id="result"></p>
+
+    <script>
+        function calculateCube() {
+            let number = parseFloat(document.getElementById("numberInput").value);
+            if (!isNaN(number)) {
+                let cube = number*number*number;
+                document.getElementById("result").textContent = "The cube of " + number + " is: " + cube;
+            } else {
+                document.getElementById("result").textContent = "Please enter a valid number.";
+            }
+        }
+    </script>
